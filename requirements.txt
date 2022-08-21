@@ -1,2 +1,4 @@
-pyrogram 
-tgcrypto 
+pyrogram
+tgcrypto
+aiofiles
+aiohttp
