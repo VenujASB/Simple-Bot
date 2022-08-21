@@ -1,11 +1,13 @@
-import os
-import telebot
+import asyncio
+from pyrogram import Client
+
+api_id = 12345
+api_hash = "0123456789abcdef0123456789abcdef"
+bot_token = 
+
+async def main():
+    async with Client("bot", api_id, api_hash, bot_token) as app:
+        await app.send_message("me", "Greetings from **Pyrogram**!")
 
 
-bot = telebot.TeleBot("5713884943:AAGBn_ESkg3y0VZurKkFnFf2pzbtfnCWSmQ")
-
-@bot.message_handler(commands=["start"])
-def send_welcome(message):
-    bot.reply_to(message, "Hello! I'm Simple Bot")
-
-bot.polling()
+asyncio.run(main())
