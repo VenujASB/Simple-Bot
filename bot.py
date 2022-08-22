@@ -1,5 +1,4 @@
 from pyrogram import Client, filters
-import os
 
 
 api_id = 18862638
