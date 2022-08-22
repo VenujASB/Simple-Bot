@@ -1,5 +1,6 @@
 import os
 from pyrogram import Client, filters
+from config import Config
 
 bot_token = Config.bot_token
 api_id = Config.api_id
